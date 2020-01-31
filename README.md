@@ -508,4 +508,29 @@ development with hot reloads and everything you might wish for, while being able
 and production environments as a single artifact. 
 
 Happy hacking!
+## how can I successfully deploy both frontend and backend in a single .war on weblogic
+
+I tried to deployed into weblogic as a .war which has a context-root : abcapi
+
+When I enter http://localhost:7001/abcapi it gives a blank page and in the console it gives an error :
+
+http://localhost:7001/static/css/main.048fc3d5.chunk.css net::ERR_ABORTED 404 (Not Found)
+
+But the resources are available under http://localhost:7001/abcapi/static/..
+
+Backend works fine as I have used the below dependency :
+
+```xml
+<dependency>
+   <groupid>org.springframework.boot</groupid>
+    <artifactid>spring-boot-starter-tomcat</artifactid>
+    <scope>provided</scope>
+</dependency>
+```
+
+### Solving this by following the below references :
+
+1.  http://frugalisminds.com/react-js/deploy-react-js-in-tomcat/
+1.  https://stackoverflow.com/questions/47987315/how-to-deploy-reactjs-application-on-tomcat-server
+1.  https://medium.com/@svinkle/how-to-deploy-a-react-app-to-a-subdirectory-f694d46427c1
 
