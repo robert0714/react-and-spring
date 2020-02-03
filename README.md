@@ -529,7 +529,7 @@ Backend works fine as I have used the below dependency :
 ```
 
 ### Solving this by following the below references :
-
+1.  Official Document:  https://create-react-app.dev/docs/deployment/#building-for-relative-paths
 1.  http://frugalisminds.com/react-js/deploy-react-js-in-tomcat/
 1.  https://stackoverflow.com/questions/47987315/how-to-deploy-reactjs-application-on-tomcat-server
 1.  https://medium.com/@svinkle/how-to-deploy-a-react-app-to-a-subdirectory-f694d46427c1
